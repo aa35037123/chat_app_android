@@ -12,14 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LINE_chat_app"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".splash_acitivity"
             android:exported="true">
+            <!-- Intent-filter should be inside the activity tag -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
     </application>
 
